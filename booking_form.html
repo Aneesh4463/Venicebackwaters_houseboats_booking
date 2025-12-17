@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Book Houseboat</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(255,255,255,0.95);
+      padding: 14px 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+    }
+
+    nav img { display: block; }
+
+    nav .brand {
+      color:#0047AB;
+      font-weight:700;
+      font-size:20px;
+    }
+
+    nav ul {
+      display:flex;
+      gap:1.25rem;
+      list-style:none;
+      margin:0;
+      padding:0;
+      align-items:center;
+    }
+
+    nav ul li a {
+      color:#1f2937;
+      text-decoration:none;
+      font-weight:600;
+      font-size:16px;
+      transition: color 0.25s, transform 0.15s;
+    }
+
+    nav ul li a:hover {
+      color:#f5a623;
+      transform: translateY(-1px);
+    }
+
+    .back-home-btn {
+      display:inline-block;
+      padding:0.5rem 1.25rem;
+      background-color:#0047AB;
+      color:#fff;
+      font-weight:600;
+      border-radius:0.5rem;
+      box-shadow:0 4px 10px rgba(0,0,0,0.12);
+      text-decoration:none;
+      transition: background-color .2s, transform .12s;
+    }
+
+    .back-home-btn:hover {
+      background-color:#003580;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width:768px) {
+      nav ul {
+        gap:0.75rem;
+        font-size:14px;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+
+<body class="text-gray-900 bg-cover bg-center bg-no-repeat"
+      style="background-image: url('assets/images/bg1.jpg');">
+
+<!-- NAVBAR -->
+<nav>
+  <div class="container mx-auto px-4 flex items-center justify-between">
+
+    <div class="flex items-center gap-3">
+      <img src="assets/images/logo6.png" alt="Logo" class="h-8 w-auto object-contain">
+      <div class="brand">VENICE BACKWATERS</div>
+    </div>
+
+    <ul class="ml-auto">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="homepage.html#about">About Us</a></li>
+      <li><a href="homepage.html#offer">What We Offer</a></li>
+      <li><a href="homepage.html#houseboat">HouseBoats</a></li>
+      <li><a href="homepage.html#service">Our Services</a></li>
+      <li><a href="homepage.html#pictures">Pictures</a></li>
+      <li><a href="homepage.html#experince">Visitor Experience</a></li>
+      <li><a href="homepage.html#contact">Contact</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- BOOKING SECTION -->
+<section class="relative max-w-7xl mx-auto px-4 py-16" style="margin-top:80px;">
+
+  <div class="text-center mb-12">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+      Book <span style="color:#0047AB">Houseboats</span>
+    </h1>
+    <div class="w-20 h-1 mx-auto mb-6" style="background-color:#0047AB"></div>
+    <p class="text-3xl font-bold mb-4">
+      Fill in your details and we'll confirm availability and rates shortly.
+    </p>
+  </div>
+
+  <div class="bg-white rounded-xl shadow-2xl overflow-hidden">
+    <div class="md:flex">
+
+      <!-- LEFT PANEL -->
+      <div class="md:w-1/3 p-10 text-white flex flex-col justify-between"
+           style="background:#0047AB;">
+
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Why book with us?</h2>
+          <ul class="space-y-4">
+            <li>- Traditional kettuvallam experience</li>
+            <li>- Fresh Kerala cuisine options</li>
+            <li>- Flexible durations & add-ons</li>
+            <li>- Fast confirmation</li>
+          </ul>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="text-lg font-semibold mb-2">Need immediate assistance?</h3>
+          <p class="mb-2" style="color:#cce0ff">Call us 9995177886, 9995177889</p>
+          <p class="text-sm" style="color:#99c2ff">
+            Available 8AM - 10PM, Monday to Sunday
+          </p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="md:w-2/3 p-10">
+        <form id="bookingForm"  class="space-y-6">
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <input type="text" name="name" placeholder="Name *" class="border p-2 rounded w-full" required>
+            <input type="text" name="phone" placeholder="Phone *" class="border p-2 rounded w-full" required>
+            <input type="email" name="email" placeholder="Email *" class="border p-2 rounded w-full" required>
+
+            <input type="date" name="arrival_date"  class="border p-2 rounded w-full"  min="" id="arrival_date" required>
+            
+
+            <input type="text" placeholder="Country" class="border p-2 rounded w-full">
+
+
+            <input type="number" name="nights" placeholder="Nights" class="border p-2 rounded w-full"  min="0" step="1" >
+            <input type="number" name="adults" placeholder="Adults *" class="border p-2 rounded w-full"  min="1" step="1" required>
+            <input type="number" name="children" placeholder="Children" class="border p-2 rounded w-full" min="0" step="1">
+
+
+            
+            <select name="boat_type" class="border p-2 rounded w-full md:col-span-2">
+
+              <option value="">Select Boat Type</option>
+              <option value="luxury_houseboat">LUXURY HOUSEBOATS</option>
+              <option value="premium_houseboat">PREMIUM HOUSEBOATS</option>
+              <option value="deluxe_houseboat">DELUXE HOUSEBOATS</option>
+              <option value="speed_boat">SPEED BOATS</option>
+              <option value="shikara_boat">SHIKHARA BOATS</option>
+              <option value="kayaking_services">KAYAKING SERVICES</option>
+
+            </select>
+
+            <select name="food_choice" class="border p-2 rounded w-full md:col-span-2" required>
+              <option value="">Select Food Preference *</option>
+              <option value="veg">Vegetarian</option>
+              <option value="non_veg">Non-Vegetarian</option>
+              <option value="both">Veg & Non-Veg</option>
+
+            </select>
+
+
+
+          </div>
+
+          <button type="submit"
+                  class="w-full py-3 px-6 text-white font-medium rounded-lg"
+                  style="background-color:#0047AB">
+            Submit Booking
+          </button>
+
+          <a href="homepage.html" class="back-home-btn">&larr; Back to Home</a>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('arrival_date').setAttribute('min', today);
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("Bzp2MU5C4kW11CIt1");
+  })();
+</script>
+
+
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // stop normal submit
+
+  const formData = {
+    name: this.name.value,
+    phone: this.phone.value,
+    email: this.email.value,
+    arrival_date: this.arrival_date.value,
+    nights: this.nights.value,
+    adults: this.adults.value,
+    children: this.children.value,
+    boat_type: this.boat_type.value,
+    food_choice: this.food_choice.value
+  };
+
+  /* 1️⃣ SEND MAIL TO OWNER */
+  emailjs.send(
+    "service_j55jkrv",
+    "template_iqd5fkn",
+    formData
+  );
+
+  /* 2️⃣ SEND THANK YOU MAIL TO CUSTOMER */
+  emailjs.send(
+    "service_j55jkrv",
+    "template_2mtqekj",
+    formData
+  );
+
+  /* 3️⃣ REDIRECT */
+  setTimeout(() => {
+    window.location.href = "booking_success.html";
+  }, 1500);
+});
+</script>
+
+
+
+</body>
+</html>

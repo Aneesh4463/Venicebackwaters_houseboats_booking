@@ -1,0 +1,877 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+
+    <!-- <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
+
+
+    <title>Houseboat Booking in Alappuzha | Venice Backwaters</title>
+    <meta name="description" content="Book luxury and affordable houseboats in Alappuzha. Day & night cruise, shikara boats, kayaking, speed boating. Best prices with Venice Backwaters.">
+    <meta name="keywords" content="houseboat booking Alappuzha, luxury houseboat Alappuzha, Alleppey houseboat, shikara boat Alappuzha, kayaking Alappuzha">
+    
+    <script type="application/ld+json">{ "@context": "https://schema.org",
+                                        "@type": "TouristAttraction",
+                                        "name": "Venice Backwaters",
+                                        "address": {
+                                        "@type": "PostalAddress",
+                                        "streetAddress": "Punnamada, Avalookunnu P.O",
+                                        "addressLocality": "Alappuzha",
+                                        "addressRegion": "Kerala",
+                                        "addressCountry": "IN"
+                                        },
+                                        "telephone": "+91-9995177886",
+                                        "url": "https://www.venicebackwaters.com"
+                                        }
+    </script>
+
+
+    <style>
+        /* Global Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f5f5f5; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header Styles */
+        header {
+           background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("assets/images/pic6.jpg");
+             background-size: cover; background-position: center; height: 100vh; color: white; text-align: center;
+            display: flex; flex-direction: column; justify-content: center; position: relative;
+        }
+
+        
+/* Navbar background*/
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 999;
+  height: 45px; /* set a fixed height */
+}
+
+/* Navbar container flex */
+.nav-inner {
+  display: flex;
+  align-items: center; /* vertically center items */
+  justify-content: space-between; /* logo left, links right */
+  height: 100%; /* fill nav height */
+  padding: 0 250px;
+  
+}
+
+/* Logo + text */
+.nav-brand {
+  display: flex;
+  align-items: center; /* vertically center logo + text */
+  gap: 12px;
+}
+
+/* Nav links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color .2s ease;
+}
+
+.nav-links li a:hover {
+  color: #f5a623;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+}
+
+
+/* Logo styling */
+
+.houseboat_logoo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 10px;               space between image and text */
+  margin-bottom: 10px;
+}
+
+.houseboat_logo_img {
+  height: 150px;           /* adjust size as needed (e.g. 48px, 80px) */
+  width: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;     /* optional rounded corners */
+  /* box-shadow: 0 4px 12px rgba(0,0,0,0.12); subtle shadow */
+}
+
+
+.houseboat_logo_text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;        
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.45);
+}
+
+/* Mobile: slightly smaller logo */
+@media (max-width: 768px) {
+  .logo-img { height: 48px; }
+  .logo-text { font-size: 18px; }
+}
+
+
+        .header-content h1 { font-size: 60px; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+        .header-content p { font-size: 20px; max-width: 800px; margin: 0 auto 30px; }
+
+        /* Primary button (existing) */
+        .btn { display: inline-block; background-color: #f5a623; color: white; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
+        .btn:hover { background-color: #e69100; }
+
+        .booking-card h1 { font-size: 26px; margin-bottom: 8px; color: #0f172a; }
+        .booking-card p { margin-bottom: 12px; color: #0f172a; }
+        .btn-book {
+            display: inline-block;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background: #0ea5a4; /* teal like old */
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-book:hover { opacity: .9; transform: translateY(-2px); transition: .15s ease; }
+
+        /* Sections */
+        .about { padding: 80px 0; background-color: white; }
+
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 36px; color: #333; }
+        
+        .sectio-service { text-align: center; margin-bottom: 50px; font-size: 36px; color: #ffffff; }
+
+        .about-content { display: flex; align-items: center; gap: 40px; }
+        .about-text { flex: 1; font-style: italic; text-align: left;}
+        .about-image { flex: 1; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .about-image img { width: 100%; height: auto; display: block; }
+
+        .wildlife { padding: 80px 0; background-color: #f9f9f9; }
+        .animals-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+        .animal-card { background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .animal-card:hover { transform: translateY(-10px); }
+        .animal-image { height: 200px; overflow: hidden; }
+        .animal-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .animal-card:hover .animal-image img { transform: scale(1.1); }
+        .animal-info { padding: 20px; }
+        .animal-info h3 { margin-bottom: 10px; color: #333; }
+        .animal-info p { color: #666; margin-bottom: 15px; }
+
+
+                
+        .what-we-offers{ padding: 80px 0; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("assets/images/bg2.jpg"); background-size: cover; background-position: center; background-attachment: fixed; color: rgb(255, 255, 255); text-align: left; }
+       
+        .whatoffer-texts {
+            font-style: italic;
+            color: #ffffff;
+            margin: 0 0 14px 0;               /* remove default left margin */
+            line-height: 1.6;                 /* improves readability */
+            text-align: left;                 /* ensures proper left alignment */
+            }
+
+        
+        .what-we-offer{ padding: 80px 0; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("assets/images/bg3.jpg"); background-size: cover; background-position: center; background-attachment: fixed; color: rgb(255, 255, 255); text-align: left; }
+       
+        .whatoffer-text {
+            font-style: italic;
+            color: #ffffff;
+            margin: 0 0 14px 0;               /* remove default left margin */
+            line-height: 1.6;                 /* improves readability */
+            text-align: left;                 /* ensures proper left alignment */
+            }
+
+
+        .explore-title{ padding: 100px 0; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("assets/images/bg4.jpg"); background-size: cover; background-position: center; background-attachment: fixed; color: rgb(255, 255, 255); text-align: center; }
+       
+        .explore-text {
+            font-style: italic;
+            color: #ffffff;
+            margin: 0 0 14px 0;               /* remove default left margin */
+            line-height: 1.6;                 /* improves readability */
+            text-align: center;                 /* ensures proper left alignment */
+            }
+
+
+
+
+        .sectio-service {
+                    position: relative;
+                    display: inline-block;
+                    padding-bottom: 8px;
+                        }
+
+
+
+
+        .sectio-service::after {
+                    content: "";
+                    width: 60px;
+                    height: 4px;
+                    background-color: #facc15; /* yellow */
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    border-radius: 2px;
+                        }
+
+
+        .gorilla-tracking h2 { margin-bottom: 30px; }
+        .gorilla-tracking p { max-width: 800px; margin: 0 auto 30px; font-size: 18px; }
+
+        .parks { padding: 80px 0; background-color: white; }
+        .parks-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px; }
+        .park-card { border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); position: relative; height: 250px; }
+        .park-image { height: 100%; }
+        .park-image img { width: 100%; height: 100%; object-fit: cover; }
+        .park-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.2)); display:flex; align-items:flex-end; padding:20px; color:white; }
+        .park-overlay h3 { font-size: 24px; }
+
+        .testimonials { padding: 80px 0; background-color: #f9f9f9; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+        .testimonial-card { background-color: white; padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+        .testimonial-text { font-style: italic; margin-bottom: 20px; color: #555; }
+
+        .testimonial-textt { font-style: italic; margin-bottom: 20px; color: #ffffff; }
+
+        .testimonial-author { font-weight: bold; color:#333; }
+
+
+
+        /* Footer */
+        footer { background-color: #333; color: white; padding: 50px 0 20px; text-align: center; }
+        .footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 30px; }
+        .footer-section { flex: 1; min-width: 250px; margin-bottom: 20px; }
+        .footer-section h3 { margin-bottom: 20px; font-size: 20px; }
+        .footer-section ul { list-style: none; }
+        .footer-section ul li { margin-bottom: 10px; }
+        .footer-section ul li a { color: #ddd; text-decoration: none; transition: color 0.3s; }
+        .footer-section ul li a:hover { color: #f5a623; }
+        .social-icons a { color: white; margin: 0 10px; font-size: 20px; transition: color 0.3s; }
+        .social-icons a:hover { color: #f5a623; }
+        .copyright { border-top: 1px solid #555; padding-top: 20px; color: #aaa; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content h1 { font-size: 40px; }
+            .about-content { flex-direction: column; }
+            nav ul { flex-direction: column; align-items: center; }
+            nav ul li { margin: 10px 0; }
+            .booking-card { margin: -40px 20px 30px; } /* smaller pull-up on mobile */
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+    <!-- Header with Navigation -->
+    <header>
+<nav>
+  <div class="container nav-inner" >
+
+
+    <!-- Links -->
+    <ul class="nav-links" >
+      <li><a href="#about">About</a></li>
+      <li><a href="#offer">What We Offer</a></li>
+      <li><a href="#houseboat">HouseBoats</a></li>
+      <li><a href="#service">Our Services</a></li>
+      <li><a href="#pictures">Pictures</a></li>
+      <li><a href="#experince">Visitor Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+        <div class="header-content">
+            <div class="houseboat_logoo">
+                <img src="assets/images/logo5.png" alt="Venice Backwaters logo" class="houseboat_logo_img" />
+                <div class="houseboat_logo_text">
+                    VENICE BACKWATERS</div>
+            </div>
+            <h1>Houseboat Booking in Alappuzha Backwaters</h1>
+
+                <div> <strong>Book luxury houseboats in Alappuzha (Alleppey) and enjoy serene backwaters, lush scenery,
+                and unforgettable experiences. Venice Backwaters offers day and night <br>
+                houseboat cruises, shikara boat rides, kayaking, speed boating, and services for families, couples, 
+                and groups at the best prices.</strong> </div>
+               <br>
+            <a href="booking_form.html" class="btn">Booking your Journey</a> 
+
+        </div>
+
+        
+    </header>
+
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-text">
+
+                    <p>A dedicated online portal offering curated houseboat experiences across Kerala’s iconic backwaters. With deep local expertise and extensive industry experience, we connect travelers with a trusted network of premium houseboat operators to ensure the best value and service.</p>
+                    <p>Alleppey's serene waterways, lush paddy fields, and rustic village life create the perfect setting for a peaceful cruise. Our fleet includes handpicked Deluxe, Premium, and Luxury houseboats, complete with modern amenities such as private bathrooms, open decks, lounges, and conference spaces—ideal for couples, families, and groups.</p>
+                    <p>Guests can also choose from Shikara boats, motorboats, kayaks, speedboats, and home stays. Our team provides 24/7 assistance before and after booking, ensuring a seamless and memorable experience.</p>
+
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/pic1.jpg" alt="venicebackwaters about">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- what we offer = -->
+
+
+<section id="offer" class="what-we-offer">
+
+        <div class="container">
+            <h2 class="sectio-service inline-block pb-2 border-b-4 border-yellow-400">What We Offer:</h2>
+
+            <div >
+                <ul>
+                    <li class="whatoffer-text ">Alleppey-based local company with strong regional knowledge</></li>
+                    <li class="whatoffer-text ">Wide selection of vetted houseboats from Deluxe to Luxury</li>
+                    <li class="whatoffer-text " >Multilingual team for easy communication</li>
+                    <li class="whatoffer-text ">Best industry deals and competitive pricing</li>
+                    <li class="whatoffer-text ">End-to-end assistance from booking to departure</li>
+                    <li class="whatoffer-text ">Authentic Alleppey backwater experience in décor, food, and service</li>
+                </ul>
+
+
+                <a href="booking_form.html" class="btn">Register Now</a>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!-- HouseBoats -->
+    <section id="houseboat" class="wildlife">
+        <div class="container">
+            <h2 class="section-title">Houseboat Booking</h2>
+            <div class="animals-grid">
+
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <img src="assets/images/pic3.jpg" alt="Luxury bedroom houseboat in Alappuzha backwaters">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Luxury Bedrooms Houseboat</h3>
+
+                        <p>Enjoy peaceful backwater views, fresh air, and the soothing sounds of nature—all from a beautifully 
+                            crafted floating home designed for pure relaxation. Whether it’s a family trip, a friend’s gathering, 
+                            or a quiet escape from routine, this luxury bedroom houseboat provides the perfect space to unwind. 
+                            Watch sunrise and sunset from the deck, enjoy freshly prepared meals, and feel the gentle rhythm of the water. 
+                            You don’t need to wait for special holidays—choose our luxury bedroom houseboat and drift into calm, refreshing 
+                            serenity anytime.</p>
+
+                        
+                        <a href="booking_form.html" class="btn">Book Now</a>
+
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <img src="assets/images/pic4.jpg" alt="Premium houseboat in Alleppey Alappuzha">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Premium Bedrooms Houseboat</h3>
+
+                        <p>Step into a world of tranquility and comfort aboard our premium houseboats in Alleppey. 
+                            Each houseboat is thoughtfully designed to blend modern luxury with traditional charm, offering a memorable 
+                            experience on Kerala’s serene backwaters. Enjoy elegant interiors, and breathtaking views as 
+                            you drift through peaceful canals. Whether you're planning a romantic, a relaxed family holiday, or a 
+                            day-and-night cruise, our premium houseboats create the ideal setting for any occasion, ensuring comfort, 
+                            beauty, and unforgettable moments throughout your journey.</p>
+
+                       <p> <a href="booking_form.html" class="btn">Book Now</a></p>
+                    </div>
+                </div>
+
+
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <img src="assets/images/pic5.jpg" alt="Deluxe houseboat booking in Alappuzha">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Deluxe Bedrooms Houseboat</h3>
+                      <!-- <p>Planning a family trip to Alappuzha?</p> -->
+                      <p>Our Deluxe bedroom houseboats are the perfect choice for nuclear families, combining modern 
+                        comforts with the traditional charm of kettuvallams. Enjoy delicious Kerala cuisine prepared by 
+                        our in-house chefs, try backwater fishing, and relax together on the breezy, sunlit deck. Watch the 
+                        sunrise and sunset, feel the gentle sway of the water, and immerse yourself in the peaceful surroundings. 
+                        A memorable day-and-night experience awaits, offering fun, relaxation, and unforgettable moments for your 
+                        entire family on Kerala’s serene backwaters.</p>
+                        
+                        <a href="booking_form.html" class="btn">Book Now</a>
+
+
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <img src="assets/images/pic7.jpg" alt="Shikara boat ride in Alappuzha backwaters">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Shikara Boats</h3>
+
+                        <p>Experience Alleppey’s backwaters in a calm and intimate way with our traditional Shikara rides. 
+                            Designed for comfort and quiet exploration, Shikaras let you glide gently through narrow canals, 
+                            lush paddy fields, and charming village landscapes. Feel the cool breeze, enjoy picture-perfect views, 
+                            and soak in the peaceful rhythm of the waters. Whether it’s a short getaway, a romantic ride, or a relaxing 
+                            family outing, a Shikara journey offers a refreshing escape into the true beauty of nature.</p>
+
+                        <a href="booking_form.html" class="btn">Book Now</a>
+
+
+                    </div>
+                </div>
+
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <img src="assets/images/pic9.jpg" alt="Speed boating in Alappuzha backwaters">
+                    </div>
+                    <div class="animal-info">
+                        <h3>Speed Boatings</h3>
+
+                        <p>Experience the thrill of the backwaters like never before with our exciting speed boating rides. 
+                        Perfect for adventure lovers, speed boating lets you race through wide stretches of water, feel the 
+                        cool spray of waves, and enjoy the stunning views of Alappuzha at high speed. Whether you're seeking a 
+                        fun family activity, an adrenaline-filled escape, or a new way to explore the backwaters, our well-maintained 
+                        speed boats and trained operators ensure a safe, fast, and unforgettable ride. </p>
+
+                        <a href="booking_form.html" class="btn">Book Now</a>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="animal-card">
+                    <div class="animal-image">
+                        <img src="assets/images/pic8.jpg" alt="Kayaking experience in Alappuzha backwaters">
+                    </div>
+                    <div class="animal-info">
+                        <h3>kayaking</h3>
+
+                        <p>Discover the backwaters at your own pace with our refreshing kayaking experience. Glide 
+                            gently through narrow canals, enjoy the soothing sounds of nature, and explore hidden corners 
+                            that larger boats cannot reach. Perfect for solo travelers, couples, or families, kayaking offers 
+                            a peaceful mix of adventure and relaxation. With safe equipment, expert guidance, and serene surroundings, 
+                            it’s the ideal way to connect with nature, experience the calm beauty of Alappuzha, and create lasting memories 
+                            on the tranquil backwaters.</p>
+
+                        <a href="booking_form.html" class="btn">Book Now</a>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- services Section -->
+
+<section id="service" class="what-we-offers">
+
+        <div class="container">
+            <h2 class="sectio-service inline-block pb-2 border-b-4 border-yellow-400">Our Services</h2>
+
+            <div >
+                <ul>
+                    <li class="whatoffer-texts ">HouseBoats</li>
+                    <li class="whatoffer-texts ">Shikara Boats</li>
+                    <li class="whatoffer-texts " >Speed Boating</li>
+                    <li class="whatoffer-texts ">Kayaking</li>
+                    <li class="whatoffer-texts ">Small Boating</li>
+                    <li class="whatoffer-texts ">home stay providing</li>
+                </ul>
+
+
+                <a href="booking_form.html" class="btn">Register Now</a>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+
+    <!-- internal pictures -->
+    <section id="pictures" class="parks">
+        <div class="container">
+            <h2 class="section-title">Pictures</h2>
+            <div class="parks-grid">
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int1.jpg" alt="houseboat internal picture">
+                    </div>
+                
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int2.jpg" alt="house boating">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int3.jpg" alt="houseboat booking">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int4.jpg" alt="luxury houseboat">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int5.jpg" alt="houseboat cruise">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int6.jpg" alt="houseboat stay">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int7.jpg" alt="private houseboat">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int8.jpg" alt="premium houseboat">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int9.jpg" alt="deluxe houseboat">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int10.jpg" alt="Kerala houseboat">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int11.jpg" alt="Alappuzha houseboat">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int12.jpg" alt="Alleppey houseboat">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int14.jpg" alt="backwater houseboat Kerala">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int15.jpg" alt="Alappuzha backwater cruise">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int16.jpg" alt="Kerala backwater houseboat">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int17.jpg" alt="houseboat booking Kerala">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int18.jpg" alt="book houseboat online">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int19.jpg" alt="best houseboat in Alappuzha">
+                    </div>
+                 
+                </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+<!-- explore  -->
+
+
+
+<section id="service" class="explore-title">
+
+        <div class="container">
+            <h2 class="sectio-service inline-block pb-2 border-b-4 border-yellow-400">Explore the Best Houseboats in Alleppey</h2>
+
+            <div >
+ <p class="explore-text ">"Explore the tranquil backwaters of Alleppey on Lake Queen Houseboats. Feel the peace of Kerala with 
+                        traditional houseboats. The houseboat in Alleppey houseboat packages suit every budget: deluxe to premium, luxury, and 
+                        ultra-luxury stay options. Cruise through spectacular landscapes while being treated to fresh, homemade meals onboard. Our 
+                        service guarantees that your Alappuzha houseboat trip is memorable. National Geographic calls booking a luxury houseboat in 
+                        Alleppey one of the top 50 things to do in a lifetime. Come, experience the magic of houseboats in Kerala with us. Luxury 
+                        houseboats are a true combination of comfort, safety, and tradition. The individual mission of each houseboat built with care 
+                        is to ensure a beautiful holiday while conserving the cultural identity of Kerala."</p>
+
+                    <p  class="explore-text ">Our deluxe houseboats at Alleppey, Kerala, are an experience you’ll not want to forget when either taking a romantic date 
+                        or the whole family out. Many options are offered here when it comes to finding that perfect houseboat in Alleppey. 
+                        With premium houseboats in Alleppey, Kerala, through deluxe houseboats in Alleppey, Kerala, and further into more premium 
+                        choices, we provide our guests with the ability to book a houseboat in Alleppey, a stress-free way to plan the trip of your 
+                        dreams.</p>
+
+                    <p class="explore-text ">We are one of the cheapest houseboat Alleppey providers. We give you a chance to enjoy the experience at affordable prices. 
+                        Our Alleppey houseboats offer a combination of luxury with affordability, making it perfect for every traveler. We can arrange 
+                        a houseboat in Alleppey at competitive prices and give you the guarantee of an exciting trip. Last but not the least, our Alapi 
+                        boathouse options comprise various types and sizes, suiting different groups and preferences. Alleppey houseboat packages promise 
+                        a total experience: stunning views, nice food, and quality service.</p>
+
+
+
+                <a href="booking_form.html" class="btn">Register Now</a>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+
+
+
+    
+    <!-- National Parks Section -->
+    <section id="experince" class="parks">
+        <div class="container">
+            <h2 class="section-title">Visitor Experiences</h2>
+            <div class="parks-grid">
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int13.jpg" alt="luxury houseboat Kerala price">
+                    </div>
+                
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int19.jpg" alt="affordable houseboat Kerala">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int21.jpg" alt="houseboat packages Kerala">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int22.jpg" alt="honeymoon houseboat Kerala">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int23.jpg" alt="family houseboat trip">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int24.jpg" alt="overnight houseboat stay">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int25.jpg" alt="sunset houseboat cruise">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int26.jpg" alt="romantic houseboat cruise">
+                    </div>
+                 
+                </div>
+
+                <div class="park-card">
+                    <div class="park-image">
+                        <img src="assets/images/int27.jpg" alt="best houseboat cruise in Alappuzha">
+                    </div>
+                 
+                </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2>Visit Venice backwaters </h2>
+                    <h5>" Discover the paradise of serene backwaters "</h5>                  
+            <p class="testimonial-textt" >Experience calm waters, lush scenery, and unforgettable moments as you drift
+               through nature on a luxury houseboat.</p>
+
+<p class="mt-4 text-gray-700">
+    <i class="fab fa-instagram"></i> Follow us on Instagram: 
+    <a href="https://www.instagram.com/venicebackwaters?igsh=MW5qcGQ4cWg0dTFwMg==" target="_blank" class="text-blue-500 hover:underline">
+    
+        Venicebackwater
+    </a>
+</p>
+
+<p class="mt-4 text-gray-700">
+
+    <i class="fab fa-whatsapp"></i> Follow us on WhatsApp : 9995177886
+
+</p>
+
+
+
+
+
+
+                </div>
+
+                <div class="footer-section" id="contact">
+                    <h3>Quick Links</h3>
+                    <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#offer">What We Offer</a></li>
+
+                    <li><a href="#houseboat">Houseboat</a></li>
+                    <li><a href="#service">Our Services</a></li>
+                    <li><a href="#pictures">Pictures</a></li>
+                    <li><a href="#experince">Vistors Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+
+                        <li><strong>Venice backwaters Alappuzha</strong></li>
+                        <li> Punnamada, Avalookunnu P.O, Alappuzha, Kerala</li>                      
+                        <li>Phone : 9995177886, 9995177889</li>
+                        <li>Email : Venicebackwatersalp25@gmail.com</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+
+                <p>&copy; 2026 Visit Venice backwaters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

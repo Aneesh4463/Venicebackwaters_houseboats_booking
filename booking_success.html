@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Booking Received</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #0f172a;
+    }
+
+    .bg-overlay {
+      background-image: url("assets/images/bg1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      min-height: 100vh;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background-image: url("assets/images/extra_photo.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 40px 25px;
+      border-radius: 12px;
+      max-width: 720px;
+      width: 90%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      position: relative;
+      z-index: 10;
+      color: #0f172a;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Slightly blurred overlay for readability */
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(255, 255, 255, 0.7); /* less opacity for slight blur */
+      backdrop-filter: blur(3px); /* small blur effect */
+      z-index: 1;
+      border-radius: 12px;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 2; /* content above overlay */
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      background: #0ea5a4;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-overlay">
+
+    <div class="card">
+      <div class="card-content">
+        <h1>Thank you, for Booking!</h1>
+
+        <p>Your booking has been received.</p>
+        <p>Our team will contact you via the phone number or email address you have provided.</p>
+
+        <a class="btn" href="homepage.html">Back to Home</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
