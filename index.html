@@ -359,6 +359,7 @@ img {
 /* ================= MOBILE HAMBURGER MENU ================= */
 
 /* Hide icon on desktop */
+/* Hide icon by default */
 .mobile-menu {
   display: none;
   color: white;
@@ -366,10 +367,9 @@ img {
   cursor: pointer;
 }
 
-/* Mobile only */
-@media (max-width: 768px) {
+/* Mobile + Laptop hamburger */
+@media (max-width: 1200px) {
 
-  /* Show menu icon */
   .mobile-menu {
     display: block;
     position: absolute;
@@ -378,12 +378,12 @@ img {
     z-index: 1001;
   }
 
-  /* Hide navbar links by default */
+  /* Hide navbar by default */
   .nav-links {
     display: none !important;
   }
 
-  /* Dropdown menu */
+  /* Show navbar when icon clicked */
   .nav-links.active {
     display: flex !important;
     flex-direction: column;
@@ -402,6 +402,7 @@ img {
     padding: 14px 0;
   }
 }
+
 
     </style>
 </head>
