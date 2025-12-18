@@ -358,11 +358,11 @@ img {
 
 /* ================= MOBILE HAMBURGER MENU ================= */
 
-/* Hide menu icon on desktop */
+/* Hide icon on desktop */
 .mobile-menu {
   display: none;
   color: white;
-  font-size: 24px;
+  font-size: 26px;
   cursor: pointer;
 }
 
@@ -375,35 +375,33 @@ img {
     position: absolute;
     right: 20px;
     top: 10px;
+    z-index: 1001;
   }
 
-  /* Hide nav links by default */
+  /* Hide navbar links by default */
   .nav-links {
-    display: none;
+    display: none !important;
+  }
+
+  /* Dropdown menu */
+  .nav-links.active {
+    display: flex !important;
     flex-direction: column;
-    background: rgba(0,0,0,0.9);
-    width: 100%;
     position: absolute;
     top: 45px;
     left: 0;
-    padding: 10px 0;
-  }
-
-  /* Show when active */
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
+    width: 100%;
+    background: rgba(0,0,0,0.95);
     text-align: center;
+    padding: 10px 0;
+    z-index: 1000;
   }
 
   .nav-links li a {
-    padding: 12px 0;
     display: block;
+    padding: 14px 0;
   }
 }
-
 
     </style>
 </head>
